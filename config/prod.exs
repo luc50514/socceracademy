@@ -19,13 +19,12 @@ config :logger, level: :info
 # To get SSL working, you will need to add the `https` key
 # to the previous section and set your `:url` port to 443:
 #
-     config :socceracademy, SocceracademyWeb.Endpoint,
-       ...,
+
        url: [scheme: "https",
         host: "socceracademy.herokuapp.com/",
         port: 443],
         force_ssl: [rewrite_on: [:x_forwarded_proto]],
-       #
+
 # The `cipher_suite` is set to `:strong` to support only the
 # latest and more secure SSL ciphers. This means old browsers
 # and clients may not be supported. You can set it to
